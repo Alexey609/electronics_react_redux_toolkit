@@ -9,6 +9,9 @@ const cartSlice = createSlice({
         setItemInCart: (state, action) => {
            state.itemsInCart.push(action.payload)
         },
+        plusCartItem: (state, action) => {
+            
+        },
         deleteItem: (state, action) => {
             state.itemsInCart = state.itemsInCart.filter(good => good.id !== action.payload)
         }
