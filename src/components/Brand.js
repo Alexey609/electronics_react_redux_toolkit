@@ -26,7 +26,7 @@ function Brand( ) {
                     <div className="shopping-item">
                         <Link to="/cart">Cart - 
                        {totalPrice > 0 ?  (
-                        <span className="cart-amunt"> {totalPrice}</span> 
+                        <span className="cart-amunt"> {totalPrice}$</span> 
                        ) : null} 
                         <i className="fa fa-shopping-cart"></i> 
                         {/* <span className="product-count">5</span> */}

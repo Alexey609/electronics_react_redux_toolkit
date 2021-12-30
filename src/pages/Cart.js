@@ -12,8 +12,21 @@ function Cart() {
 
     return (
     <div className="container">
-      <div className="row">    
-        <div className="col-md-8">
+      <div className="row">
+        <div className="col-md-4">
+            <div className="single-sidebar">
+                        <h2 className="sidebar-title">Search Products</h2>
+                        <form action="#">
+                            <input type="text" placeholder="Search products..."/>
+                            <input type="submit" value="Search"/>
+                        </form>
+             </div>
+         </div>    
+     </div>         
+      <div className="row">
+        <div className="col-md-12">
+        <div className="row">
+        <div className="col-md-6">
                 <div className="product-content-right">
                      <div className="woocommerce">
                         <table cellspacing="0" className="shop_table cart">
@@ -23,8 +36,8 @@ function Cart() {
                                             <th className="product-thumbnail">&nbsp;</th>
                                             <th className="product-name">Product</th>
                                             <th className="product-price">Price</th>
-                                            <th className="product-quantity">Quantity</th>
-                                            <th className="product-subtotal">Total</th>
+                                            {/* <th className="product-quantity">Quantity</th>
+                                            <th className="product-subtotal">Total</th> */}
                                         </tr>
                                     </thead>
 
@@ -44,7 +57,9 @@ function Cart() {
                          </table>
                      </div>
                  </div> 
-                 <div class="cart_totals ">
+               </div>  
+               <div className="col-md-6">
+                 <div className="cart_totals ">
                                 <h2>Cart Totals</h2>
 
                                 <table cellspacing="0">
@@ -57,10 +72,12 @@ function Cart() {
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>    
+                 </div>
+               </div>  
+             </div>    
         </div>
-        </div>     
-        </div>  
+     </div>  
+</div>  
     )
 }
 

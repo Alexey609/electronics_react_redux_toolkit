@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { deleteItem } from '../../redux/cart/reducer';
 
 
+
  export const OrderItem = ({ good, id }) => { 
 
     const dispatch =  useDispatch();
@@ -39,7 +40,7 @@ import { deleteItem } from '../../redux/cart/reducer';
              <span className="amount">{ good.price }$</span> 
          </td>
 
-         <td className="product-quantity">
+         {/* <td className="product-quantity">
              <div className="quantity buttons_added">
                  <input type="button" className="minus" value="-"/>
                  <input type="number" size="4" className="input-text qty text" title="Qty" value="1" min="0" step="1"/>
@@ -49,7 +50,7 @@ import { deleteItem } from '../../redux/cart/reducer';
 
          <td className="product-subtotal">
              <span className="amount">£15.00</span> 
-         </td>
+         </td> */}
      </tr>
     )
 }
